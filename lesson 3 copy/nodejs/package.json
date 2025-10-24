@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "fs-extra": "^11.3.2"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
