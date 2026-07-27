@@ -1,0 +1,31 @@
+{
+  "name": "lesson-10-books-api-tests",
+  "version": "1.0.0",
+  "description": "API tests for FakeRestAPI Books endpoints (status codes, JSON schema, negative cases)",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testTimeout": 15000,
+    "verbose": true,
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters",
+        {
+          "publicPath": "./report",
+          "filename": "report.html",
+          "pageTitle": "Books API tests"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "axios": "^1.7.9",
+    "jest": "^30.2.0",
+    "jest-html-reporters": "^3.1.7"
+  }
+}
